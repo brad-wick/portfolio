@@ -27,11 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 text-gray-950 h-[2000px]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 text-gray-950 h-[2000px] pt-32 sm:pt-36`}
       >
-        <div className="bg-purple -z-10 absolute top-[-20rem] left-0 h-1/2 w-full rounded-full blur-[10rem]" />
-
-        {/* <div className="bg-purple -z-10 absolute bottom-[-30rem] left-0 h-1/2 w-full rounded-full blur-[10rem]" /> */}
+        <div className="bg-purple -z-10 absolute top-[-10rem] left-0 h-1/2 w-full rounded-full blur-[10rem]" />
         <Header />
         {children}
       </body>
