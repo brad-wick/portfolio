@@ -18,7 +18,7 @@ export default function About() {
             </p>
             <p className='mb-3'>
                 When it comes to coding, my favorite tech stack is{" "}
-                <strong>React, Next.js, Node.js, TypeScript, TailwindCSS</strong>{" "}and{" "}
+                <strong>React, Next.js, Node.js, TypeScript, Tailwind CSS</strong>{" "}and{" "}
                 <strong>Prisma.</strong>{" "}
                 I&apos;m always exploring new technologies and frameworks to improve my skills.
             </p >

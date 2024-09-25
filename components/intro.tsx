@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
-
+import profilePicture from "@/public/profile-pic.png"
 export default function Intro() {
     return (
         <section className='mb-28 max-w-[37rem] sm:mb-0'>
@@ -20,10 +20,10 @@ export default function Intro() {
                             duration: 0.25
                         }}>
                         <Image
-                            src="/profile-pic.png"
+                            src={profilePicture}
                             alt='Portrait of Bradley Flores'
-                            width={140}
-                            height={140}
+                            width={150}
+                            height={150}
                             quality={95}
                             priority
                             className='rounded-full object-cover border-[0.3rem] border-white shadow-2xl'
