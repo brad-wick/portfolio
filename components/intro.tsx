@@ -7,8 +7,8 @@ import Link from 'next/link'
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import profilePicture from '@/public/profile-pic.png'
-
 import { useSectionInView } from '@/lib/hooks'
+
 export default function Intro() {
   const { ref } = useSectionInView('Home')
   return (

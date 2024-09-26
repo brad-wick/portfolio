@@ -5,7 +5,7 @@ import type { SectionName } from '@/lib/types'
 
 export function useSectionInView(
   sectionName: SectionName,
-  threshold: number = 0.75
+  threshold: number = 0.5
 ) {
   const { ref, inView } = useInView({
     threshold,
