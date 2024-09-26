@@ -13,7 +13,7 @@ export default function Skills() {
       id='skills'
       className='mb-28 max-w-[37rem] sm:mb-0 scroll-mt-28'
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>Skills</SectionHeading>
       <ul className='flex flex-wrap justify-center gap-3 text-lg text-gray-800'>
         {skillsData.map((skill, index) => (
           <li

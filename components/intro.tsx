@@ -4,17 +4,18 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import profilePicture from '@/public/profile-pic.png'
 import { useSectionInView } from '@/lib/hooks'
+import { MdEmail } from 'react-icons/md'
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home')
+  const { ref } = useSectionInView('About Me')
   return (
     <section
       ref={ref}
-      id='home'
+      id='about'
       className='mb-28 max-w-[37rem] sm:mb-0 scroll-mt-48'
     >
       <div className='flex items-center justify-center'>
@@ -57,15 +58,14 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className='font-bold'>Hi, I&apos;m Bradley. </span> As a {''}
-        <span className='font-bold'>software engineer, </span> I&apos;m
-        dedicated to building web applications that blend {''}
-        <span className='font-bold'>pixel-perfect design </span> with {''}
-        <span className='font-bold'>
-          intuitive functionality{' '}
-        </span> ensuring {''}
-        <span className='font-bold'>high-performance </span> and {''}
-        <span className='font-bold'>flawless user experience.</span>
+        <strong></strong>
+        <span>
+          <strong>Hi, I&apos;m Bradley,</strong> a {''}
+          <strong>software engineer</strong> based in Mexico. I specialize in{' '}
+          <strong>full-stack</strong> development, working primarily with{' '}
+          <strong>React, Node.js, TypeScript</strong> and{' '}
+          <strong>PostgreSQL.</strong>
+        </span>
       </motion.h1>
       <motion.div
         className='flex gap-3 flex-col sm:flex-row items-center justify-evenly text-lg font-medium'
@@ -76,10 +76,10 @@ export default function Intro() {
         <Link
           className='flex items-center justify-center gap-2 bg-violet-950 px-7 py-3 text-white 
                     rounded-full transition hover:scale-110 outline-none focus:scale-110 active:scale-95'
-          href={'#contact'}
+          href='mailto:bradflores.dev@gmail.com'
         >
-          Contact me here
-          <BsArrowRight />
+          Drop me an email
+          <MdEmail />
         </Link>
         <a
           className='flex items-center justify-center gap-2 bg-white border border-violet-950 px-7 py-3 text-gray-950 rounded-full transition hover:scale-110 outline-none focus:scale-110 active:scale-95 cursor-pointer'
