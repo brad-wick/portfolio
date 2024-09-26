@@ -19,9 +19,13 @@ export default function Awards() {
   const plugin = React.useRef(Autoplay({ delay: 3000 }))
 
   return (
-    <section ref={ref} id='awards' className='max-w-[35rem] mb-20 scroll-mt-28'>
+    <section
+      ref={ref}
+      id='awards'
+      className='max-w-[40rem] mb-20 scroll-mt-28 relative'
+    >
       <SectionHeading>Awards</SectionHeading>
-      <div className='flex flex-col gap-1 text-center items-center border border-violet-950 rounded-lg bg-gray-100'>
+      <div className='max-w-[24rem] flex flex-col gap-1 text-center items-center border border-violet-950 rounded-lg bg-gray-100'>
         <Carousel
           opts={{
             active: true,
@@ -29,7 +33,6 @@ export default function Awards() {
             loop: true,
           }}
           plugins={[plugin.current]}
-          className='w-full'
         >
           <CarouselContent>
             {imagesCarousel.map((image, index) => (
@@ -48,21 +51,20 @@ export default function Awards() {
           <CarouselNext className='hidden' />
         </Carousel>
 
-        <div className='flex flex-col gap-2 px-5 py-5'>
+        <div className='flex flex-col gap-2 px-5 py-2'>
           <span className='text-2xl'>
             <strong>Muse</strong>
           </span>
           <span>
-            Muse is a web platform aimed at transforming the fusion of
-            technology and culture, creating a safe space for independent
-            artists and cultural organizations to share the richness of our
-            region&apos;s cultural identity. It seeks to integrate tools for art
-            distribution, sales, and purchases while minimizing cultural
-            technological lag and the undervaluation of art.
+            Muse is a web platform that connects culture and technology,
+            providing a safe space for independent artists and cultural
+            organizations to showcase the region&apos;s cultural identity. It
+            offers tools for distributing, selling, and purchasing art, aiming
+            to reduce the tech gap and ensure art is fairly valued.
           </span>
           <span className='font-bold text-sm'>INNOVATEC 2022</span>
           <span className='font-bold text-sm'>
-            3rd place in the Industry 4.0 category
+            Muse won 3rd place at the nationals in the Industry 4.0 category.
           </span>
         </div>
       </div>
